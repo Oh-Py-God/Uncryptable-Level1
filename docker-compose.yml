@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  db:
+    container_name: database
+    build: ./mariadb
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_USER: vibhavd
+      MYSQL_PASSWORD: vibhavd
+      MYSQL_DATABASE: crypt_level1
+    networks:
+      - backend
+
+  php:
+    container_name: server
+    build: ./php
+    volumes:
+      - ./src/:/usr/src/app/
+    depends_on:
+      - db
+    networks:
+      - backend
+    ports:
+      - 9090:8080
+
+networks:
+  backend:
