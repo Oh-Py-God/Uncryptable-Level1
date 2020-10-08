@@ -24,7 +24,7 @@ services:
     networks:
       - backend
     ports:
-      - 9090:8080
+      - 1337:8080
 
 networks:
   backend:
