@@ -1,9 +1,6 @@
 <?= \Config\Services::validation()->listErrors(); ?>
 
 <section>
-  <!--form action="/api/register" method="post">
-  < ?= csrf_field() ?-->
-
   <table>
     <tr>
       <td><label for="email"> Email </label></td>
@@ -35,5 +32,4 @@
       <td><button onclick="doRegister()"> Signup! </button></td>
     </tr>
   </table>
-  <!--/form-->
 </section>

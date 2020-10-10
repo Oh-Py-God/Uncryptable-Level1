@@ -24,9 +24,6 @@
   <p> Try a key combination here and remember that Bruteforce would get you nowhere. Totally your choice! </p>
 
   <section>
-    <!--form method="post" id="loginForm">
-    <= csrf_field() ?-->
-
     <table>
       <tr>
         <td><label for="key"> Key </label></td>
@@ -39,6 +36,5 @@
       </tr>
       
     </table>
-    <!--/form-->
   </section>
 <?php endif ?>

@@ -1,9 +1,6 @@
 <?= \Config\Services::validation()->listErrors(); ?>
 
 <section>
-  <!--form method="post" id="loginForm">
-  <= csrf_field() ?-->
-
   <table>
     <tr>
       <td><label for="username"> Username </label></td>
@@ -26,5 +23,4 @@
     </tr>
     
   </table>
-  <!--/form-->
 </section>

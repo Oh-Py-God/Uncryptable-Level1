@@ -145,7 +145,6 @@ function checkSession() {
 }
 
 var AES_KEY = CryptoJS.enc.Hex.parse("7824262c7bc1df38dcc1ea799faff39fa17d52453ce65040a7280c9141b60267");
-//var AES_IV = CryptoJS.enc.Hex.parse("");
 var AES_IV = CryptoJS.enc.Hex.parse('f1cd03bba534cd7039708a30d7cd722d');
 
 function encrypt(plaintext) {
